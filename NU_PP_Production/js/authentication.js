@@ -1,0 +1,3 @@
+function Login(){
+    //NovaFireBase.auth()
+}

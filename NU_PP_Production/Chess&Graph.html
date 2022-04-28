@@ -1,0 +1,150 @@
+<html>
+  <head>
+    <title>Northeastern_Project</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-firestore.js"></script>
+  </head>
+  <body>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script> -->
+    <script src="./js/firebase.js"></script>
+    <script src="./js/authentication.js"></script>
+    <script src="./js/sendEmail.js"></script>
+    <script src="app.js"></script>
+    
+    
+    <!--Navigation Bar -->
+    <section id="nav-bar">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <h4><b>Welcome to CS 1800!!</b></h4>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#top">Home</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+              </li>
+              
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contacts</a>
+            </li>
+
+              
+            <li class="nav-item">
+              <a class="nav-link" href="explore_themes.html" tabindex="-1" aria-disabled="true"
+                >Explore Themes!</a>
+            </li>
+        
+            </ul>
+        </div>
+      </nav>
+    </section>
+    <!-- Artist Account -->
+    <section id="artist_account">
+      <div class="container">
+        <h1>Chess and Graph Theory</h1>
+        <div class="row">
+          <div class="account">
+            <div class="col-md-8 profile-pic text-center">
+              <div class="img-box">
+                <img src="image/chess-g3daf9a9e1_640.jpg" />
+              </div>
+              <h2>Chess History/Information:</h2>
+            
+              <h3>
+                Chess, originating from a game in India called Chaturanga, has deep roots in mathematics. There are 6 different kinds of pieces, and all of them have different move sets. The King, the most important piece, can move square in every direction. The queen can move in a straight line and diagonally across the board and is known as the most powerful piece. The rook can move along the board in a straight line sideways or forward and back. The Bishop can move diagonally. The Knight moves one square diagonally and then one square straight, which looks like an ‘L’ once the move has been played. And finally, pawns can only move forward, 1 or two squares on the first move, 1 after that, and then they capture diagonally. Being that each player gets 16 total pieces on a 64-square board, it can be seen that different combinations of board arrangements are easily reached. In fact, the number of different board arrangements is so large, that no one has or probably ever will make an effort to calculate the exact number. It is said that there are an estimated 10^81 atoms in the observable universe and the number of chess arrangements far exceeds that.     
+              </h3>
+                
+                 <h2>Chess and very large numbers:</h2>
+            
+              <h3>
+                If you take a look at the complexity of the game of Chess, you will quickly see its relationship with very combinations and very large numbers. Even after the first move the amount of options spirals into chaos. Once both players have moved, the amount of possible board arrangements jumps to 400 possible setups. After two turns, 197,742, and then after just three turns each, there are 121 million possibles move sets. After just THREE moves. 
+              </h3>
+
+                  
+                   <h2>The 8 Queens Problem:</h2>
+            
+              <h3>
+                One chess puzzle that ties in well with a unit from discrete structures is the eight queens problem. This is a well-known puzzle in chess that was solved in 1850. The idea is that there are 8 queens on the board, and there are 64 open spaces. To know how many different arrangements there are considering that the order of queens does not matter, this is a balls and bins problem. Since there are 64 for spaces, and 8 of those will be taken up by the queens, the equation to get the total number of arrangements can be modeled by:
+                                             <br>   <sup>64!</sup>&frasl;<sub>8!(56!)</sub>   <br>
+                Which is an astronomically large number. The way this puzzle is solved is to have all of the queens cover every single on of the squares on the board. Fun Fact: there is only 92 distinct correct solutions. 
+                            
+                             <div class="img-box2">
+                                <img src="image/chess2.png" />
+                             </div>
+             </h3>
+                
+                
+            <h2>Knights Journey:</h2>
+            
+              <h3>
+                Another Chess puzzle that dives deep into mathematics is the knight's tour. This is a graph theory problem and is one of the most aesthetically pleasing math chess problems. The graph is made by moving the knight so it touches each square exactly once and tracing its path. Once traced out, it is oddly symmetrical.
+ 
+              </h3>
+                            <div class="img-box2">
+                                <img src="image/chess3.png" />
+                             </div>
+
+              <h3>
+                It is extremely fascinating to watch this happen because it is hard to imagine a piece that moves in such a unique way and never touches the same square twice. Below is an animation from chess.com:
+              </h3>
+                            <div class="img-box2">
+                                <img src="https://images.chesscomfiles.com/uploads/v1/images_users/tiny_mce/PedroPinhata/phpbfKABy.gif" alt="funny GIF" width="100%">
+                             </div>
+                
+              <h3>
+                Even though this looks very complicated and precise, it is only one of many solutions to the knight's tour. There are multiple ways to solve this problem using a computer, one of which is a brute force algorithm that represents the board as a graph of ones and zeros meaning the square has been or has not been traveled to. The knight is then given a list of squares it has the possibility of travelling to (max of eight). It traverses to a possible square, checks if it is in bounds and has not been travelled to, and then continues. This algorithm has a O(n^2) and is not very efficient at all if you are trying to find multiple correct paths for the knight to follow. 
+              </h3>
+                
+            <h2>Graph Theory:</h2>
+            
+              <h3>
+                Graph theory is the study of graphs, which are mathematical tools used to represent relationships between objects. They are particularly useful in computer science to use as data structures, and a lot of very efficient algorithms have been created to traverse graphs. For example, if one were to make a chess AI engine theft would need to represent the board and pieces as a graph and use it to determine the best possible move for one side. Another way to represent chess in a graph would be to have all of the squares represented as vertices and the pieces possible moves as edges between such vertices. This would be very necessary in order to build a chessboard in software and then to further create a moveset for both players. <br> <br>
+
+                One of the most important things to learn about in chess is the end game. This is where both sides have been limited to their kings and pawns or just one extra piece and they must figure out a way to win with most of the board wide open. This is an instance where chess engines must use combinatorics and graph theory to find the best way to win. The king can move in 8 different directions, so it instantly makes the amount of different games extremely large. The way the engine would determine the best move would be to create a tree containing all of one sides possible moves, and then the other possible moves and then weight the values of each tree path based on how much material is won. Using combinatorics we can see how quickly this would become very expensive, so modern chess engines have create algorithms that do this based upon many different variables and are much faster.
+                <br> <br>
+                Through this study we have learned a lot about chess and how it relates to discrete mathematics. We plan to expand this website in the future to contain other interesting information we find!
+ 
+ 
+              </h3>
+                
+            </div>
+            
+            </div>
+          </div>
+          
+        </div>
+      
+    </section>
+    
+  </body>
+</html>
